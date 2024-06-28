@@ -207,6 +207,10 @@ footer {
     .timeline-item::after {
         left: 15px;
     }
+
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
     
     .timeline-item:nth-child(odd)::after,
     .timeline-item:nth-child(even)::after {
