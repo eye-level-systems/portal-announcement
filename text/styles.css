@@ -1,15 +1,21 @@
 @font-face {
     font-family: 'EyeLevelSemiBold';
+   	font-weight:600; 
+	font-style:normal; 
     src: url('fonts/Eye Level SemiBold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'EyeLevelMedium';
+    font-weight:500;
+    font-style:normal; 
     src: url('fonts/Eye Level Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'EyeLevelLight';
+    font-weight:400;
+    font-style:normal; 
     src: url('fonts/Eye Level Light.otf') format('opentype');
 }
 
