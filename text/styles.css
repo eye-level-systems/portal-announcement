@@ -1,19 +1,16 @@
 @font-face {
-    font-family: 'Eye Level SemiBold';
+    font-family: 'EyeLevelSemiBold';
     src: url('fonts/Eye Level SemiBold.otf') format('opentype');
-    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Eye Level Medium';
+    font-family: 'EyeLevelMedium';
     src: url('fonts/Eye Level Medium.otf') format('opentype');
-    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Eye Level Light';
+    font-family: 'EyeLevelLight';
     src: url('fonts/Eye Level Light.otf') format('opentype');
-    font-style: normal;
 }
 
 :root {
@@ -25,7 +22,7 @@
 }
 
 body {
-    font-family: 'Eye Level Light', 'Arial', sans-serif;
+    font-family: 'EyeLevelLight', 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -83,12 +80,12 @@ section {
 }
 
 h1 {
-    font-family: 'Eye Level SemiBold', 'Arial', sans-serif;
+    font-family: 'EyeLevelSemiBold', 'Arial', sans-serif;
     color: var(--white);
 }
 
 h2 {
-    font-family: 'Eye Level Medium', 'Arial', sans-serif;
+    font-family: 'EyeLevelMedium', 'Arial', sans-serif;
     color: var(--secondary-color);
 }
 
