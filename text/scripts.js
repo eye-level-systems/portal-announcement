@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Initialize the carousel
-    $('.carousel').slick({
+    $('.slick-carousel').slick({
         dots: true,
         infinite: true,
         speed: 500,
