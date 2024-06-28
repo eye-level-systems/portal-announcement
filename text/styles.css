@@ -247,7 +247,26 @@ footer {
     width: 100%;
     height: auto;
 }
+/* Custom styles for Slick Carousel dots */
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+}
 
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
 
 @media screen and (max-width: 600px) {
     .timeline::after {
