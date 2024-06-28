@@ -171,7 +171,7 @@ a:hover {
 }
 
 .timeline-item:nth-child(odd)::after {
-    right: 64px;
+    right: -17px;
 }
 
 .timeline-item:nth-child(even)::after {
@@ -208,8 +208,9 @@ footer {
         left: 15px;
     }
     
+    .timeline-item:nth-child(odd)::after,
     .timeline-item:nth-child(even) {
-        left: 0%;
+        left: 15px;
     }
     
 }
