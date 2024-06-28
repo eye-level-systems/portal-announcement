@@ -128,6 +128,7 @@ a:hover {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .timeline::after {
@@ -146,6 +147,7 @@ a:hover {
     position: relative;
     background-color: inherit;
     width: 50%;
+    box-sizing: border-box;
 }
 
 .timeline-item::after {
@@ -169,11 +171,11 @@ a:hover {
 }
 
 .timeline-item:nth-child(odd)::after {
-    right: -16px;
+    right: -17px;
 }
 
 .timeline-item:nth-child(even)::after {
-    left: -16px;
+    left: -17px;
 }
 
 .timeline-content {
@@ -208,5 +210,10 @@ footer {
     
     .timeline-item:nth-child(even) {
         left: 0%;
+    }
+    
+    .timeline-item:nth-child(odd)::after,
+    .timeline-item:nth-child(even)::after {
+        left: 15px;
     }
 }
