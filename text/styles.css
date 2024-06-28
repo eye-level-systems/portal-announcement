@@ -2,21 +2,21 @@
     font-family: 'EyeLevelSemiBold';
    	font-weight:600; 
 	font-style:normal; 
-    src: url('fonts/EyeLevelSemiBold.otf') format('opentype');
+    src: url('https://raw.githubusercontent.com/eye-level-systems/portal-announcement/main/fonts/EyeLevelSemiBold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'EyeLevelMedium';
     font-weight:500;
     font-style:normal; 
-    src: url('fonts/EyeLevelMedium.otf') format('opentype');
+    src: url('https://raw.githubusercontent.com/eye-level-systems/portal-announcement/main/fonts/EyeLevelMedium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'EyeLevelLight';
     font-weight:400;
     font-style:normal; 
-    src: url('fonts/EyeLevelLight.otf') format('opentype');
+    src: url('https://raw.githubusercontent.com/eye-level-systems/portal-announcement/main/fonts/EyeLevelLight.otf') format('opentype');
 }
 
 :root {
