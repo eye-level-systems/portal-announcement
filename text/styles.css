@@ -63,10 +63,14 @@ header h1 {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
-    padding: 15px;
+    width: 50px;  /* Fixed width */
+    height: 50px; /* Fixed height */
     border-radius: 50%;
     font-size: 18px;
     transition: background-color 0.3s;
+    display: flex;           /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
 }
 
 #goToTopBtn:hover {
