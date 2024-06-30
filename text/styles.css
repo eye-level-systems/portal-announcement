@@ -52,6 +52,27 @@ header h1 {
     color: #333; /* Adjust this color as needed for better contrast */
 }
 
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#goToTopBtn:hover {
+    background-color: var(--secondary-color);
+}
+
 nav {
     background-color: var(--secondary-color);
     padding: 0.5rem 1rem;
