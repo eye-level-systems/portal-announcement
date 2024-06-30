@@ -26,25 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
         autoplay: true,
         autoplaySpeed: 3000
     });
-
-    // Initialize Fancybox
-    $("[data-fancybox]").fancybox({
-        buttons: [
-            "zoom",
-            "share",
-            "slideShow",
-            "fullScreen",
-            "download",
-            "thumbs",
-            "close"
-        ],
-    });
-
-       // Prevent default behavior for carousel links
-    $('.slick-carousel a').on('click', function(e) {
-        e.preventDefault();
-        $.fancybox.open( $('[data-fancybox="carousel"]'), {
-            index: $(this).parent().index()
-        });
-    });
 });
