@@ -39,4 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "close"
         ],
     });
+
+       // Prevent default behavior for carousel links
+    $('.slick-carousel a').on('click', function(e) {
+        e.preventDefault();
+        $.fancybox.open( $('[data-fancybox="carousel"]'), {
+            index: $(this).parent().index()
+        });
+    });
 });
