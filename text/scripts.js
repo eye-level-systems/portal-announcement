@@ -25,5 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 3000
-    });	
+    });
+
+    // Initialize Fancybox
+    $("[data-fancybox]").fancybox({
+        buttons: [
+            "zoom",
+            "share",
+            "slideShow",
+            "fullScreen",
+            "download",
+            "thumbs",
+            "close"
+        ],
+    });
 });
