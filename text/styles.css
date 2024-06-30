@@ -37,7 +37,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, white, #0066FF);
+    background-color: var(--bg-color);
     color: var(--text-color); /* You might want to adjust this for better contrast */
     padding: 1rem;
     text-align: center;
