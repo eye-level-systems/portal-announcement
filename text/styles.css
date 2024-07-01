@@ -271,9 +271,7 @@ footer {
 }
 
 .carousel .slick-slide {
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    position: relative;
+    height: 400px;
 }
 
 .carousel .slick-slide img {
