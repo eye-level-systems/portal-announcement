@@ -287,15 +287,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    /* Mobile-specific carousel styles */
-    .carousel {
-        margin: 1rem 0;
-    }
-
-    .carousel .slick-slide {
-        padding-bottom: 75%; /* 4:3 aspect ratio for mobile */
-    }
-	
     nav {
         padding: 0.5rem;
     }
