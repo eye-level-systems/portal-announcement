@@ -227,7 +227,7 @@ a:hover {
 
 .benefit-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -368,6 +368,12 @@ footer {
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 600px) {
