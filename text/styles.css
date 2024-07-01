@@ -141,6 +141,95 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Changes section styles */
+#changes {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.changes-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.change-group {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.change-group h3 {
+    font-family: 'EyeLevelMedium', 'Arial', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.change-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.change-list li {
+    font-family: 'EyeLevelLight', 'Arial', sans-serif;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.change-list li i {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.key-change {
+    background-color: rgba(0, 102, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.key-change i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 1rem;
+}
+
+.key-change p {
+    font-family: 'EyeLevelMedium', 'Arial', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 153, 0, 0.1);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.note p {
+    font-family: 'EyeLevelLight', 'Arial', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.note strong {
+    font-family: 'EyeLevelMedium', 'Arial', sans-serif;
+    color: var(--primary-color);
+}
+
 .benefit-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -299,6 +388,15 @@ footer {
     nav ul li {
         margin: 0.25rem 0;
     }
+
+    .changes-container {
+        flex-direction: column;
+    }
+
+    .change-group {
+        min-width: auto;
+    }
+	
     .timeline::after {
         left: 31px;
     }
