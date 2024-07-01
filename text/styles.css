@@ -239,7 +239,7 @@ footer {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 70%;
+    max-width: 100%;
     margin-bottom: 2rem;
 }
 
