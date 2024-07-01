@@ -257,14 +257,34 @@ footer {
 }
 
 /* Carousel styles */
+/* Updated Carousel styles 20240701 */
 .carousel {
     margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-.carousel img {
-    width: 100%;
-    height: auto;
+.carousel .slick-list,
+.carousel .slick-track {
+    height: 100%;
 }
+
+.carousel .slick-slide {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+}
+
+.carousel .slick-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* Custom styles for Slick Carousel dots */
 .slick-dots li button:before {
     font-family: 'slick';
@@ -287,6 +307,15 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    /* Mobile-specific carousel styles */
+    .carousel {
+        margin: 1rem 0;
+    }
+
+    .carousel .slick-slide {
+        padding-bottom: 75%; /* 4:3 aspect ratio for mobile */
+    }
+	
     nav {
         padding: 0.5rem;
     }
