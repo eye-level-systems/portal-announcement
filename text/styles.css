@@ -239,8 +239,9 @@ footer {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
-    margin-bottom: 2rem;
+    max-width: 1200px; /* Match the max-width of the main content */
+    margin: 0 auto 2rem; /* Center the container and keep bottom margin */
+    width: 100%; /* Ensure it takes full width of its parent */
 }
 
 .video-container iframe {
