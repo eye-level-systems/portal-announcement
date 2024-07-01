@@ -142,14 +142,6 @@ a:hover {
 }
 
 /* Changes section styles */
-#changes {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background-color: var(--white);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .changes-container {
     display: flex;
     justify-content: space-between;
