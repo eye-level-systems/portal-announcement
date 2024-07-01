@@ -195,12 +195,15 @@ a:hover {
     font-size: 1.5rem;
     color: var(--secondary-color);
     margin-right: 1rem;
+    flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .key-change p {
     font-family: 'EyeLevelMedium', 'Arial', sans-serif;
     color: var(--text-color);
     margin: 0;
+    flex-grow: 1; /* Allow text to take up remaining space */
+    display: inline; /* Make paragraph inline */
 }
 
 .note {
