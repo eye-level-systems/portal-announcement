@@ -322,7 +322,7 @@ footer {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Match the max-width of the main content */
+    max-width: 800px; /* Match the max-width of the main content */
     margin: 0 auto 2rem; /* Center the container and keep bottom margin */
 }
 
