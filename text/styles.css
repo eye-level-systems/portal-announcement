@@ -341,13 +341,10 @@ footer {
 }
 
 .countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2.5em;
     text-align: center;
     background-color: #F9F9F9;
-    color: var(--white);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
     margin: 2rem auto;
@@ -355,27 +352,14 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5em;
-}
-
-.countdown-value {
+.countdown span {
     display: inline-block;
     min-width: 1.6em;
     padding: 0.2em 0.4em;
+    margin: 0 0.2em;
     background-color: var(--primary-color);
     color: var(--white);
     border-radius: 5px;
-}
-
-.countdown-label {
-    font-size: 0.3em;
-    margin-top: 0.5em;
-    text-transform: uppercase;
-    color: var(--text-color);
 }
 
 /* Carousel styles */
@@ -470,12 +454,8 @@ footer {
         padding: 10px;
     }
     
-    .countdown-value {
+    .countdown span {
         min-width: 1.4em;
         padding: 0.1em 0.2em;
-    }
-
-    .countdown-label {
-        font-size: 0.25em;
     }
 }
