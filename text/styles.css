@@ -343,8 +343,8 @@ footer {
 .countdown {
     font-size: 2.5em;
     text-align: center;
-    background-color: #F9F9F9;
-    color: var(--text-color);
+    background-color: #f9f9f9;
+    color: var(--white);
     padding: 20px;
     border-radius: 10px;
     margin: 2rem auto;
