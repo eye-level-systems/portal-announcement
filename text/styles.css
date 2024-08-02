@@ -340,19 +340,27 @@ footer {
     height: 100%;
 }
 
-      .countdown {
-            font-size: 3em;
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .countdown span {
-            display: inline-block;
-            min-width: 1.6em;
-        }
-	
+.countdown {
+    font-size: 2.5em;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.countdown span {
+    display: inline-block;
+    min-width: 1.6em;
+    padding: 0.2em 0.4em;
+    margin: 0 0.2em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
 /* Carousel styles */
 .carousel {
     margin: 2rem 0;
@@ -386,6 +394,10 @@ footer {
 @media screen and (max-width: 768px) {
     .benefit-grid {
         grid-template-columns: 1fr;
+    }
+    .countdown {
+        font-size: 2em;
+        padding: 15px;
     }
 }
 
@@ -436,5 +448,13 @@ footer {
     .timeline-item:nth-child(even)::after {
         left: 15px;
     }
+    .countdown {
+        font-size: 1.5em;
+        padding: 10px;
+    }
     
+    .countdown span {
+        min-width: 1.4em;
+        padding: 0.1em 0.2em;
+    }
 }
