@@ -48,44 +48,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Countdown Timer functionality
 function updateCountdown() {
-    const targetDate = new Date("2024-08-12T11:00:00+09:00");
-    const now = new Date();
-    const difference = targetDate - now;
+        const targetDate = new Date("2024-08-12T11:00:00+09:00");
+        const now = new Date();
+        const difference = targetDate - now;
 
-    if (difference > 0) {
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        if (difference > 0) {
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        const countdownElement = document.getElementById("countdown");
-        if (countdownElement) {
-            countdownElement.innerHTML = `
-                <div class="countdown-item">
-                    <span class="countdown-value">${String(days).padStart(2, '0')}</span>
-                    <span class="countdown-label">Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value">${String(hours).padStart(2, '0')}</span>
-                    <span class="countdown-label">Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value">${String(minutes).padStart(2, '0')}</span>
-                    <span class="countdown-label">Minutes</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value">${String(seconds).padStart(2, '0')}</span>
-                    <span class="countdown-label">Seconds</span>
-                </div>
-            `;
-        }
-    } else {
-        const countdownElement = document.getElementById("countdown");
-        if (countdownElement) {
-            countdownElement.innerHTML = "The event has passed!";
+            const countdownElement = document.getElementById("countdown");
+            if (countdownElement) {
+                countdownElement.innerHTML = 
+                    `<span>${String(days).padStart(2, '0')}</span>:` +
+                    `<span>${String(hours).padStart(2, '0')}</span>:` +
+                    `<span>${String(minutes).padStart(2, '0')}</span>:` +
+                    `<span>${String(seconds).padStart(2, '0')}</span>`;
+            }
+        } else {
+            const countdownElement = document.getElementById("countdown");
+            if (countdownElement) {
+                countdownElement.innerHTML = "The event has passed!";
+            }
         }
     }
-}
+
     // Initialize and update the countdown timer
     updateCountdown();
     setInterval(updateCountdown, 1000);
