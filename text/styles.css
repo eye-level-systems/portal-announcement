@@ -340,6 +340,19 @@ footer {
     height: 100%;
 }
 
+      .countdown {
+            font-size: 3em;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .countdown span {
+            display: inline-block;
+            min-width: 1.6em;
+        }
+	
 /* Carousel styles */
 .carousel {
     margin: 2rem 0;
